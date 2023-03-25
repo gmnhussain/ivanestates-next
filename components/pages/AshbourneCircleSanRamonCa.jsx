@@ -1,4 +1,12 @@
 const PageContent = () => {
+  const handleScroll = () => {
+    window.scrollTo({
+      top: 680,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
       {/* <!-- property big image section --> */}
@@ -8,7 +16,10 @@ const PageContent = () => {
             src="https://res.cloudinary.com/luxuryp/image/upload/f_auto,q_auto/HX5KGXNSAz29GcHb"
             alt="3515 Ashbourne Cir photo"
           />
-          <button className="scroll btn--secondary fas fa-chevron-down"></button>
+          <button
+            className="scroll btn--secondary fas fa-chevron-down"
+            onClick={() => handleScroll()}
+          ></button>
         </div>
       </section>
 

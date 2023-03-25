@@ -1,7 +1,9 @@
+import Banner from "../utils/Banner";
+
 const CompassConcierge = () => {
   return (
     <>
-      <div id="bannar" className="section_concierge bannar custom_intro">
+      {/* <div id="bannar" className="section_concierge bannar custom_intro">
         <div className="bannar_container">
           <h1>Compass Concierge</h1>
           <p className="bannar_subtitle">
@@ -12,7 +14,14 @@ const CompassConcierge = () => {
             <i className="fas fa-chevron-down" aria-hidden="true"></i>
           </a>
         </div>
-      </div>
+      </div> */}
+
+      <Banner
+        title="Compass Concierge"
+        subTitle="Get fronted for the cost of home improvement services with no
+        interest — ever."
+        bgImage="/img/banner/compass.webp"
+      />
 
       <section id="section">
         <div className="section basic_paddings">

@@ -1,7 +1,9 @@
+import Banner from "../utils/Banner";
+
 const Sold2Content = () => {
   return (
     <>
-      <div id="bannar" className="sold bannar custom_intro">
+      {/* <div id="bannar" className="sold bannar custom_intro">
         <div>
           <div className="bannar_container">
             <h1 className="bannar_title">Past Transactions</h1>
@@ -13,7 +15,13 @@ const Sold2Content = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
+
+      <Banner
+        title="Past Transactions"
+        subTitle="View some of our recently sold listings."
+        bgImage="/img/banner/sold.webp"
+      />
 
       <main>
         <section className="properties">
