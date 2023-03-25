@@ -73,7 +73,7 @@ const CompassConcierge = () => {
                   </p>
                   <p className="section_content__text2">Ivan Santacruz</p>
 
-                  <p style="font-family: CompassSans;">
+                  <p style={{ fontFamily: "CompassSans" }}>
                     Real Estate Agent
                     <br />
                     <a className="link" href="mailto:realty@ivanestates.com">

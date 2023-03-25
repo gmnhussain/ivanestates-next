@@ -28,7 +28,7 @@ const Header = () => {
     const handleHeaderScroll = (e) => {
       setScrollTop(window.pageYOffset);
 
-      if (scrollTop > 0) {
+      if (scrollTop > 20) {
         header.classList.add("scroll");
       }
 
@@ -44,7 +44,7 @@ const Header = () => {
         setPrevScrollTop(scrollTop);
       }
 
-      if (scrollTop <= 0) {
+      if (scrollTop <= 20) {
         header.classList.remove("scroll");
         header.classList.remove("scroll_down");
         header.classList.remove("scroll_up");

@@ -1,3 +1,5 @@
+import Map from "./utils/Map";
+
 const ContactModal = () => {
   const handleContactModal = (e) => {
     e.preventDefault();
@@ -15,11 +17,12 @@ const ContactModal = () => {
 
         <div className="container contact_us__container">
           <div className="first_container">
-            <div
+            {/* <div
               className="contact_us__map map-container"
               data-lat="37.8236107"
               data-lng="-122.0044777"
-            ></div>
+            ></div> */}
+            <Map />
           </div>
 
           <div className="second_container">

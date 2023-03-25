@@ -2,6 +2,14 @@ import SliderTestimonial1 from "./SliderTestimonial1";
 import SliderTestimonial2 from "./SliderTestimonial2";
 
 const Home = () => {
+  const handleContactModal = (e) => {
+    e.preventDefault();
+    document.querySelector("#modal_contact_us").classList.add("visible");
+    document.body.classList.add("locked");
+    // $("#modal_contact_us").addClass("visible");
+    // $("body").addClass("locked");
+  };
+
   return (
     <>
       {/* <!-- intro video --> */}
@@ -42,7 +50,11 @@ const Home = () => {
               </p>
               <h1 className="home_heading__lgtitle">Ivan Santacruz</h1>
               <p className="home_heading__title3">CA DRE# 02055245</p>
-              <a role="button" className="btn btn--secondary contact_us__btn">
+              <a
+                role="button"
+                className="btn btn--secondary contact_us__btn"
+                onClick={(e) => handleContactModal(e)}
+              >
                 Let&#x27;s Connect
               </a>
             </div>

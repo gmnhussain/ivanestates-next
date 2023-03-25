@@ -1009,7 +1009,7 @@ hr {
   color: #000;
 }
 
-body > div.floating_contact {
+body div.floating_contact {
   display: none;
   position: fixed;
   width: 100%;
@@ -1020,7 +1020,7 @@ body > div.floating_contact {
   right: 0;
 }
 
-body > div.floating_contact .item {
+body div.floating_contact .item {
   outline: none;
   width: 50px;
   height: 50px;
@@ -1035,15 +1035,15 @@ body > div.floating_contact .item {
   font-size: 20px;
 }
 
-body > div.floating_contact .item svg {
+body div.floating_contact .item svg {
   fill: #484b4e;
 }
 
-body > div.floating_contact .item:nth-child(n + 2) {
+body div.floating_contact .item:nth-child(n + 2) {
   margin-top: 15px;
 }
 
-body > div.floating_contact .wrapper {
+body div.floating_contact .wrapper {
   pointer-events: all;
   display: flex;
   flex-direction: column;
@@ -1052,12 +1052,12 @@ body > div.floating_contact .wrapper {
   bottom: 70px;
 }
 
-body > div.floating_contact .item {
+body div.floating_contact .item {
   background-color: black;
   color: #f1f1f1;
 }
 
-body > div.floating_contact .item svg {
+body div.floating_contact .item svg {
   fill: #f1f1f1;
 }
 
@@ -2038,7 +2038,7 @@ i {
   background-image: url("https://res.cloudinary.com/luxuryp/images/w_1920,c_limit,f_auto,q_auto/mma87pnmj7aczb2dwime/success-stories");
 }
 
-body > .modal {
+body .modal {
   position: fixed;
   overflow-y: auto;
   top: 0;
@@ -2050,7 +2050,7 @@ body > .modal {
   display: block;
 }
 
-body > .modal .modal-content {
+body .modal .modal-content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2059,7 +2059,7 @@ body > .modal .modal-content {
   min-height: 100vh;
 }
 
-body > .modal .lightbox-video {
+body .modal .lightbox-video {
   width: 100%;
   max-width: 177vh;
 }
@@ -2081,7 +2081,7 @@ body > .modal .lightbox-video {
   margin: 0;
 }
 
-body > .modal .close {
+body .modal .close {
   display: block;
   position: absolute;
   right: 8vw;
@@ -2095,7 +2095,7 @@ body > .modal .close {
   z-index: 2;
 }
 
-body > .modal .close img {
+body .modal .close img {
   width: 100%;
   height: 100%;
 }
@@ -2534,6 +2534,7 @@ body > .modal .close img {
   position: relative;
   background-color: #fff;
   position: fixed;
+  z-index: 999;
 }
 
 #modal_contact_us.visible {
@@ -2543,7 +2544,7 @@ body > .modal .close img {
   overflow: auto;
 }
 
-body > .modal-content,
+body .modal-content,
 .modals > .modal-content {
   display: flex;
   align-items: center;
@@ -3485,7 +3486,7 @@ body > .modal-content,
 }
 
 @media (max-width: 500px) {
-  body > div.floating_contact {
+  body div.floating_contact {
     display: block;
   }
 
